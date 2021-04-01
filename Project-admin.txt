@@ -1,0 +1,31 @@
+Building the admin suite
+	PowerShell based admin scripts for Active Directory
+
+	What are the scripts that need to be consolidated and deployed in the final tool ?
+	
+	1.  User unlocks
+	2.  User password resets -- Generate a random password also have the facility to give a password to reset (from a list too)
+	3.  Create user - From a list and singles
+	4.  Create admin users (pre-programmed user base)
+	5.  AD computer object clean-up (sanity check + deletion)
+	6.  Service account sanity check (check enabled/disabled/managers populated/pwd expiry)
+	7.  last logon checks for users - Sanity checks
+	8.  Active directory service check
+	9.  Server availabilty check (Pre-set and on-demand)
+	10. Admin accounts check (Main groups -predefined)
+	11. Check admin account sanity (enabled/disabled/managers populated/pwd expiry/last logon)
+	12. Privileged account check (service accounts)
+	13. Validate rules (Check if there are illegal members in important groups)
+	14. Delete unwanted admin accounts (pre-defined)
+	15. Delete unwanted service accounts (pre-defined)
+
+Create a GUI for all these operations. Also, a command line.
+	So, the plan would be is to create the command line first. Then move to the GUI. Maybe host on a web broser - so a web application.
+	
+Steps on getting these functions off the ground...
+	Write the operating aspects of the script, the logging and the hints and outputs. 
+	Put the checks and balances in place for ensuring no-unauthorized actions.
+	Make sure un-authorized actions can be reversed with relative ease.
+	Make the logging amazingly easy to read.
+
+Then, write all the modules one by one in seperate scripts and then integrate.
